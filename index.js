@@ -8,6 +8,13 @@ function incrementar(){
     countEl.innerText = count; // quero q a tela mostre o novo numero do contador
 }
 
+function decrementar(){
+    if(count > 0){
+        count--;
+    }
+    countEl.innerText = count;
+}
+
 function salvar(){
     let salvo = count + " - ";
     saveEl.textContent  += salvo;
