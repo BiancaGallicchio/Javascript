@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="styles.css"> <!-- vou linkar a estilização pra aplicar ela no site-->
+        <title>Quantas pessoas entraram?</title>
     </head>
-    <body>
-        <h1>Pessoas entraram:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn"> Incrementar </button>
+    <body style="text-align: center;">
+        <!-- <p id="welcome-el"></p> -->
+        <h1 style="font-family: 'Silkscreen'">Pessoas entraram:</h1>
+        <h2 style="font-family: 'Silkscreen'" id="count-el">0</h2>
+        <button style="background-color: blue;" id="increment-btn" onclick="incrementar()"> + </button>
+        <button style="background-color: green;" id="save-btn" onclick="salvar()">Salvar</button>
+        <button style="background-color: red;" id="reset-btn" onclick="reset()">Resetar</button>
+        <p id="save-el" style="font-family: 'Silkscreen'">Entradas anteriores: </p>
         <script src="index.js"></script> <!-- vou linkar o meu script pra ele funcionar no site-->
     </body>
 </html>
