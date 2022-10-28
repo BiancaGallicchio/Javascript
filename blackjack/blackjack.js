@@ -14,6 +14,15 @@ let sumEl = document.querySelector("#sum-el"); // no querySelector vc precisa es
 let message = ""
 let messageEL = document.getElementById("message-el");
 
+// criando objetos:
+let player = {
+    name: "Al",
+    chips: 150
+}
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips; // me referir aos atributos do jogador
+
 function getRandomCard(){
     let num = Math.floor(Math.random()*13) + 1
     if(num == 1){
@@ -28,10 +37,8 @@ function getRandomCard(){
 }
 
 function startGame(){
-    if(isAlive === false || hasBlackjack === true){ // limpar as cartas
-        cards = [];
-        cardEl.textContent = "Cards: ";
-    }
+    cards = []; // limpar a mesa
+    cardEl.textContent = "Cards: ";
     hasBlackjack = false; // quando o jogo começa, essa variavel volta a ser false
     isAlive = true;
     let card = getRandomCard();
@@ -54,10 +61,14 @@ function renderGame(){
     else if(sum === 21){
         message = "You've got a Blackjack!";
         hasBlackjack = true;
+        player.chips += 50
+        playerEl.textContent = player.name + ": $" + player.chips;
     }
     else{  // maior que 21
         message = "You're out of the game!";
         isAlive = false;
+        player.chips -= 10
+        playerEl.textContent = player.name + ": $" + player.chips;
     }
     messageEL.textContent = message
     //console.log(message)
