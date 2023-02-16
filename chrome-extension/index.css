@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(45deg, #1b212c 0%, #32316b 100%);
+    padding: 10px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input-btn{
+    border-radius: 4%;
+    border: none;
+    color: white;
+    background-color: #32316b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 1% 2%;
+    cursor:pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+#input-btn:hover{
+    background-color: #1b212c;
+    box-shadow: 0 5px 5px 0 rgba(255, 255, 255, 0.24), 0 10px 10px 0 rgba(255, 255, 255, 0.19);
+}
+
+#input-el{
+    box-sizing: border-box; /* evitar q o input vaze pra direita */
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1.8vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    height: 10px; 
+    border: 3px solid #32316b;
+    font-size: 1.9vw;
+}
+
+ul{
+    color: white;
+}
