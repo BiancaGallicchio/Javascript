@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./pedra-papel-tesoura.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./pedra-papel-tesoura.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        function refreshPage() {
+            location.reload();
+        }
+    </script>
+    <title>Pedra Papel e Tesoura</title>
+</head>
+<body>
+    <header onclick="refreshPage()">
+        <h1>Pedra, Papel e Tesoura</h1>
+    </header>
+    <main>
+        <div class="choices">
+            <h2>Escolha do computador: <span id="computer-choice"></span></h2>
+            <h2>Sua escolha: <span id="user-choice"></span></h2>
+            <h2>Resultado: <span id="result"></span></h2> 
+        </div>
+        <div class="buttons">
+            <button id="pedra">Pedra</button>
+            <button id="papel">Papel</button>
+            <button id="tesoura">Tesoura</button>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
