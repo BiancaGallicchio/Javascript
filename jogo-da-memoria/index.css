@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Gabarito', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow-y: hidden;
+}
+
+#grid{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adicione uma classe para as imagens no CSS */
+.card-image {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 300px;
+    margin: 5px; /* Adicione margens para espaçamento */
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+#timer {
+    margin-top: 10px;
+    font-size: 18px;
+}
